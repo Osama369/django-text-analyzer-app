@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is template page</title>
+    <style>
+      .check_boxes{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+      }
+       button{
+        margin-left: 600px;
+        margin-top: 20px;
+        width: 100px;
+        height: 30px;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+
+      <h2>
+        Text Analyzer 
+      </h2>
+
+      <form action="/analyze" method="get">
+          
+
+          <textarea name="text" id="" cols="30" rows="10" style="width: 1253px; height: 286px;" spellcheck="false"></textarea>
+           <div class="check_boxes">
+
+             <input type="checkbox" name="removepun">remove punctuation
+             
+             <input type="checkbox" name="full_caps">capatilize 
+             <input type="checkbox" name="new_line_remover"> remove new line 
+             <input type="checkbox" name="count_words"> count words
+             <input type="checkbox" name="count_line"> count lines
+             <input type="checkbox" name="Language_Detection">Language Detection
+             <input type="checkbox" name="extra_space">remove extraspace
+            </div>
+            <button type="submit">Analyze</button>
+        </form>
+    </body>
+</html>
