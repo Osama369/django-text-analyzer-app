@@ -1,0 +1,17 @@
+{
+
+    "builds": [{
+
+        "src": "schoolproject/wsgi.py",
+        "use": "@vercel/python",
+         "config": {"maxLamdasize": "15mb", "runtime": "python3.11.2"}
+
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "schoolproject/wsgi.py"
+        }
+    ]
+
+}
